@@ -1,0 +1,55 @@
+
+*{font-size: 62.5%;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{ 
+        /* in this website the flex direction is row which means main axis is horizontal so cross axis is column.. */
+    display: flex;
+    font-family: 'Fuzzy Bubbles', cursive;
+    
+    /*horizontally*/
+    justify-content: space-evenly;
+    /*vertically*/
+    align-items: center;
+    /*it aligns items in the cross axis, in this case cross axis is... column, vertically*/
+    align-content: space-between;
+}
+.header h1{ 
+    font-size: 3.5rem;
+}
+.buy-icon{ 
+    height: 3rem;
+    width: 3rem;
+}
+.w-title{
+    /*Flex-grow property applies to childs, it sets how much space in the line the element will take...*/
+    flex-grow: 9;
+}
+.w-button{
+    flex-grow: .5;
+}
+.w-button button{
+    border: none;
+    background-color:white ;
+    color: black;
+    font-size: 2rem;
+
+}
+.nav-icons{
+    flex-grow: .5;
+
+}
+.nav-list{ 
+    font-size: 2.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.nav-list a{ 
+    text-decoration: none;
+    color: black;
+}
