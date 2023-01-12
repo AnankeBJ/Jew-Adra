@@ -1,57 +1,81 @@
  @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Quicksand:wght@300&display=swap'); 
- 
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
 }
-.header{ 
-        /* in this website the flex direction is row which means main axis is horizontal so cross axis is column.. */
+
+.nav{
+    min-height: 13vh;
+    font-family: 'Dosis', sans-serif;
+    /*background-color: aquamarine;*/
     display: flex;
-    font-family: 'Fuzzy Bubbles', cursive;
-    
-    /*horizontally*/
-    justify-content: space-evenly;
-    /*vertically*/
+    flex-direction: column;
     align-items: center;
-    /*it aligns items in the cross axis, in this case cross axis is... column, vertically*/
-    align-content: space-between;
+    
 }
-.header h1{ 
+
+.main__title{
     font-size: 3.5rem;
+    font-weight: 100;
 }
-.buy-icon{ 
-    height: 3rem;
-    width: 3rem;
-}
-.w-title{
-    /*Flex-grow property applies to childs, it sets how much space in the line the element will take...*/
-    flex-grow: 9;
-}
-.w-button{
-    flex-grow: .5;
-}
-.w-button button{
-    border: none;
-    background-color:white ;
-    color: black;
+
+.slogan{
     font-size: 2rem;
+    font-weight: 100;
+}
+.catalog__section{
+    height: 90vh;
+    background-color: coral;
 
 }
-.nav-icons{
-    flex-grow: .5;
-
-}
-.nav-list{ 
-    font-size: 2.5rem;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+.catalog__title{
+    height: 10vh;
+    background-color: black;
+    color: white;
     align-items: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+
+}
+
+.jewelry__categories{
+    width: 80%;
+    height: 85vh;
+    margin: auto;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.jewelry__containers{
+    width: 100%;
+    height: 40vh;
+    background-color: aquamarine;
+    /*border: .4rem solid black;*/
+    margin: 0 .5rem;
     
 }
-.nav-list a{ 
-    text-decoration: none;
-    color: black; 
+.image__styles{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
